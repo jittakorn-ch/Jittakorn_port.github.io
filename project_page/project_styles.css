@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu{
+    /* border: solid 1px green; */
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: flex-end;
+    margin-right: 9vw;
+}
+
+.menu a{
+    text-decoration: none;  /*underline = none*/
+    font-weight: 700;
+    color: black;
+    margin-left: 5vw;
+}
+.menu a:hover{
+    color: rgb(182, 35, 143);
+}
+
+.logo{
+    /* border: solid 1px pink; */
+    height: 100%;
+    width: 200px;
+    display: flex;
+    margin-left: 2vw;
+    background-image: url('../resource/logo.png');
+    background-size: cover;
+}
+
+/*---------------------------------------------------------*/
+
+.content{
+    /* border: solid 2px blue; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-1 h2{
+    /* border: solid 1px green; */
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+
+.flex-container{
+    /* border: solid 3px yellow; */
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;            /*ปัดกล่อง flex ที่ล้นลงไปข้างล่าง*/
+    /* overflow: auto; */
+}
+
+.box{
+    background-color: gray;
+    width: 250px;
+    height: 200px;
+    margin: 0px 20px 90px 20px;     /*top right bottom left*/
+    border: solid 1px rgb(215, 215, 215);
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transition: opacity 0.3s ease; */
+}
+.box img:hover{
+    color:ghostwhite;
+    opacity: 0.7; /* Set the desired opacity value for the hover effect */
+}
+
+.box a{
+    text-decoration: none;
+    /* border: solid 1px yellowgreen; */
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}

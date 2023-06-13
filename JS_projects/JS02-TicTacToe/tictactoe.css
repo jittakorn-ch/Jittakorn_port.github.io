@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu{
+    /* border: solid 1px green; */
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10vw;
+}
+
+.menu a{
+    text-decoration: none;  /*underline = none*/
+    font-weight: 700;
+    color: black;
+    margin-left: 5vw;
+    /* text-shadow: 2px 1px gray; */
+}
+.menu a:hover{
+    color: rgb(182, 35, 143);
+}
+
+.logo{
+    height: 100%;
+    width: 200px;
+    /* border: solid 1px pink; */
+    display: flex;
+    margin-left: 2vw;
+    background-image: url('../../resource/logo.png');
+    background-size: cover;
+}
+
+.content{
+    /* border: solid 2px blue; */
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------------*/
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#gameboard{
+    width: 300px;
+    height: 300px;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px black;
+    box-sizing: content-box;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.square:hover{
+    background-color: rgb(231, 229, 229);
+}
+
+.circle{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: solid 20px blue;
+}
+
+.cross{
+    height: 90px;
+    width: 90px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross:before, .cross:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.cross:before{
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.cross:after{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+.bg-wins{
+    background-color: rgb(212, 120, 206);
+}
+
+#info{
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#reset{
+    margin-top: 20px;
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: rgb(131, 251, 107);
+    color:rgb(182, 35, 143)
+}
